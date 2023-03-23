@@ -91,10 +91,10 @@ body{
     display: flex;
     justify-content:center;
     align-items: center;
-    gap: 7px;
+    gap: 10px;
     padding: 9px 12px;
     background: #ffffff00;
-    border: 2px solid #ffffffb9;
+    /* border: 2px solid #ffffffb9; */
     text-transform: capitalize;
     border-radius: 4px;
     color: #ffffffb9;
@@ -102,9 +102,11 @@ body{
   }
   .btn-share {
     display: flex;
+    font-weight: bolder;
     justify-content: center;
     align-items: center;
     gap: 7px;
+    width: 150px;
     padding: 9px 12px;
     background: #ffffff00;
     border: 2px solid #ffffffb9;
@@ -117,6 +119,7 @@ body{
     text-transform: capitalize;
     width: 150px;
     padding: 9px 12px;
+    font-weight: bolder;
     background: #ffffff00;
     border: 2px solid #ffffffb9;
     border-radius: 4px;
