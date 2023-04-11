@@ -168,9 +168,6 @@ btnsubmit.addEventListener("click", function () {
       console.log("false k andar");
       lightModeProperties();
     }
-  
-  
-    //by default, pranaygupta ki info show krre h UI pr
     getUserData(url + "bhavkush");
   }
   
