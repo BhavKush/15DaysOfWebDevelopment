@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Neuehaasgroteskdisp w02, sans-serif;
+    overflow-x: hidden;
+}
+
+.logosec .logo {
+    margin-left: 5em;
+    width: 5rem;
+    height: 5rem;
+}
+
+.logotext {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.firstpage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 3rem;
+
+}
+
+.logosec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navbarsec {
+    display: flex;
+    justify-content: end;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+}
+
+.navitem a {
+    text-decoration: none;
+    color: black;
+}
+
+.navitem {
+    display: block;
+    position: relative;
+    font-weight: bold;
+}
+
+.navitem:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease;
+    /* margin-bottom: -15px;  */
+}
+
+.navitem:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    /* margin-top: 10px; */
+
+}
+
+#myVideo {
+    position: absolute;
+    /* right: 0; */
+    margin-bottom: -10px;
+    bottom: 3rem;
+    padding-top: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    margin-right: 2rem;
+}
+
+.button:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.button {
+    background-color: black;
+
+    color: #efe9e0;
+
+    height: 50px;
+    width: 170px;
+    position: relative;
+    z-index: 1;
+    border-radius: 100vw;
+    transition: all .5s cubic-bezier(.19, 1, .22, 1);
+    box-shadow: inset 0 0 0 2px #141722;
+
+
+}
+
+.button::before {
+    content: "";
+    background-color: #efe9e0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    z-index: -1;
+    border-radius: 3rem;
+    /* transition:all 1s ; */
+
+}
+
+.button:hover::before {
+    transform: scaleY(1);
+    border-radius: 3rem;
+
+}
+
+#tag {
+    /* color:black; */
+    font-size: 30;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+.container {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: right;
+    gap: 5rem;
+    padding-top: 5rem;
+    margin-left: 5em;
+}
+
+#tag {
+    /* color:black; */
+    font-size: 20;
+    font-weight: bolder;
+}
+
+.heading {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.info {
+    font-weight: lighter;
+}
+
+/* .wrapper2{
+    position: relative;
+    padding-top: 34rem;*/
+
+.line1 {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.line2 {
+    display: flex;
+    gap: 6.2rem;
+    justify-content: end;
+    align-items: center;
+    margin-right: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+.text {
+    background-color: #efe9e0;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    /* font-size: 2.5rem; */
+    border: 1px solid black;
+    width: 90%;
+    height: 45rem;
+    margin-top: 30rem;
+    position: relative;
+    border-radius: 2em;
+    display: flex;
+    margin-left: 5rem;
+    justify-content: space-around;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.page2 {
+    /* position: relative; */
+    background-color: #efe9e0;
+
+}
+
+.bold {
+    font-weight: normal;
+    font-size: 4.5rem;
+}
+
+.p1 {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.p2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.line3 {
+    position: absolute;
+    top: 50rem;
+    left: -3.5rem;
+    animation-name:dotsanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes dotsanimation{
+    0%{
+transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+.line4img {
+    position: absolute;
+    top: 72rem;
+    right: -7rem;
+    width: 400px;
+    animation-name:dotsanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.page3 {
+    background-color: #efe9e0;
+    overflow: hidden;
+}
+
+.heading1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 10rem;
+    margin-left: 30rem;
+}
+
+.page3main {
+    display: flex;
+
+    justify-content: stretch;
+    align-items: center;
+    border: 1px solid #efe9e0;
+    margin-top: 5rem;
+    border-radius: 3rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    height: 38rem;
+}
+
+.page3left {
+    background-color: #798399;
+    width: 50%;
+    height: 100%;
+    color: #efe9e0;
+    overflow: hidden;
+
+}
+
+.page3right {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f3ce8c;
+}
+
+.l_heading {
+    font-weight: lighter;
+    font-size: 3rem;
+    margin-left: 3rem;
+    color: #efe9e0;
+    margin-top: 2rem;
+}
+
+.r_heading {
+    font-weight: lighter;
+    font-size: 3rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.l_para {
+    margin-left: 3rem;
+    font-size: 1rem;
+}
+
+.r_para {
+    margin-left: 3rem;
+    font-size: 1rem;
+}
+
+.mar {
+    margin-left: 3rem;
+}
+.btn3{
+    margin-top: 45px;
+    color: #efe9e0;
+    transition-duration: .8s;
+    background-color: rgba(0, 0, 0, 0);
+
+
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.leftimg {
+    width: 7.75vw;
+    max-width: 149px;
+    margin-top: 3rem;
+    margin-left: 35rem;
+
+}
+.rightimg {
+    width: 7.75vw;
+    max-width: 149px;
+    margin-top: 3rem;
+    margin-left: 35rem;
+
+}
+
+#lineimage{
+    position: absolute;
+    top: 86rem;
+    left: -10.5rem;
+    display: inline-block;
+    width: 360px;
+    animation-name:dotsanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.page4{
+    background-color: #efe9e0;
+    width: 100%;
+    height: 66rem;
+}
+
+h3{
+    font-size: 3.5rem;
+    margin-top: 10rem;
+    margin-left: 3rem;
+}
+.l_para .temp{
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+/*FAQ*/
+
+.container h1{
+    text-align: center;
+  }
+  
+  details{
+    background-color: #efe9e0;
+    font-size: 1.5rem;
+  }
+  
+  summary {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding: .5em 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;  
+    transition: height 1s ease;
+    margin-left: 30rem;
+  }
+  
+  .q1{
+    margin-left: 30rem;
+    margin-right: 10rem;
+    display: flex;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    opacity: 80%;
+  }
+
+
+  
+  summary:after{
+    content: "\002B";
+  }
+  
+  details[open] summary {
+
+      margin-bottom: .5em;
+      margin-left: 29rem;
+  }
+  
+  details[open] summary:after{
+    content: "\00D7";
+  }
+  
+  /* details[open] div{
+    padding: .5em 1em; 
+  }  */
+
+  .faq{
+    /* width: 80%; */
+    margin-left: 25rem;
+    margin-right: 5rem;
+
+  }
+
+  #faqimg{
+    position: absolute;
+    top: 170rem;
+    left: -10.5rem;
+    display: inline-block;
+    width: 400px;
+    animation-name:dotsanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  #e-img{
+    width:20rem;
+  }
+  .endimg{
+    position: absolute;
+    top: 190rem;
+    right:-5rem;
+    animation-name:dotsanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  .page5{
+    background-color: #141722;
+    color: #efe9e0;
+    height: 35rem;
+  }
+
+.e_hero{
+width: 12rem;
+font-size: 2rem;
+margin-top: 8rem;
+display: flex;
+margin-left: 4rem;
+cursor: pointer;
+}
+.icons{
+    display: flex;
+    margin-left: 4rem;
+    gap: 2rem;
+    flex-direction:initial;
+    margin-top: 3rem;
+    cursor: pointer;
+    
+}
+.icons2{
+    display: flex;
+    margin-left: 4rem;
+    gap: 2rem;
+    flex-direction:initial;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.climate{
+    width: 15rem;
+    margin-left: 4rem;
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+.f_elements{
+    display: flex;
+    flex-direction: column;
+    margin-left: 37rem;
+    margin-top: -20rem;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.elem{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
