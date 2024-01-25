@@ -1,5 +1,5 @@
-# 50DaysOfWebDevelopment
-Hey, In this 50DaysOfWebDevelopment repository i am going to add some mini WebDev projects till 50th day.
+# 15DaysOfWebDevelopment
+Hey, In this 15DaysOfWebDevelopment repository, I am going to add some mini WebDev projects till the 15th day.
 
 
 Project 1 : <a href= "https://bhavkush.github.io/50DaysOfWebDevelopment/Day1/Counter%20Application/index.html" >Demo </a> <br>
